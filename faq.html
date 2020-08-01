@@ -1,0 +1,162 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion{
+  background-color: #eee;
+  color: blue;
+  cursor: pointer;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  text-align:left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.4s;
+  opacity: 0.6;
+ 
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+  }
+
+.accordion:after {
+  content: '\002B';
+  color: blue;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+ 
+}
+
+.active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  background-color: #000d33;
+  color: white;
+  max-height: 0;
+  font-weight: bold;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+body {
+ background-image:url("https://www.detroitlabs.com/wp-content/uploads/2018/02/alfons-morales-YLSwjSy7stw-unsplash.jpg");
+ background-repeat: no-repeat;
+ background-attached: fixed;
+ width: 100%;
+ }
+h1{
+ font-family: algerian;
+ text-align : center;
+ }
+ 
+</style>
+</head>
+<body>
+<h1 style="color:white">Frequently Asked Questions</h1>
+
+<button class="accordion">1.What is the biggest challenge now faced in your library?
+</button>
+<div class="panel">
+  <p>The biggest challenge for my library is survival.  There are fewer and fewer readers. University libraries have
+  scientists and students. Public libraries go to directionto culture houses. Games and events in libraries are slowly becoming a basic activity</p>
+</div>
+
+<button class="accordion">2.Can anyone explain to me how I could use diffusion of innovation theory as a theoretical framework for research on awareness and perception?</button>
+<div class="panel">
+  <p>Theory of Diffusion of adoption comes in picture if consumers have accepted/bought a product, service or a
+  process. What you are asking about it 'Awareness and perception' something which comes before the purchase</p>
+</div>
+
+<button class="accordion">3.How do libraries manage efficiency analyses for electronic resources (digital collections of rare books, periodicals, etc.)?
+</button>
+<div class="panel">
+  <p>economic indicators are indeed essential to analyze the acquired resources.
+But also like to analyze these digital library resources created library (periodicals, rare books, etc. are not covered by copyright). Costs are significant for the creation of resources (financial, human, etc.). Libraries put the question to make such an analysis?
+</p>
+</div>
+<button class="accordion">4.Can anyone help me to find the indicators of 'the implementation of knowledge management on academic libraries'?</button>
+<div class="panel">
+  <p>These sources were of particular help for me:
+Borgman, C. L. (2007). Scholarship in the Digital Age. MIT Press
+Borgman, C. L. (2003). Personal digital libraries: Creating individual spaces for innovation. NSF Workshop on Post-Digital Libraries Initiative Directions, June 4, 2003.
+Glushko, R. J. (2013). The discipline of organizing. MIT Press.
+for the Journal Article below.
+Regards, Ulli
+Article Supporting Digital Scholarship and Individual Curation based...
+</p>
+</div>
+<button class="accordion">5.How can social media be used to enhance library services?
+</button>
+<div class="panel">
+  <p>We use FaceBook and Twitter and to a much smaller degree Instagram to help cover special events, exhibitions and celebrations of e.g. Library Week or a link to a famous alumni.
+  The Library links with the student association pages and work with the Student Administration to help spread the message that
+  we are here to help. We also use very targeted emails to connect with the post Graduate community who are difficult
+  to establish contact with as they arrive at different times of the year. Our Library is very lucky to have a
+  specialist communication team that send out the messages which are worded in a manner that is inviting to a
+  younger audience. Absolutely agree with other comments - the  library today must be in the student spaces.</p>
+</div>
+<button class="accordion">6.How can the privacy and security of electronic resources in academic libraries be enhanced?
+</button>
+<div class="panel">
+  <p>The librarian is only facilitating access. The moment security measures are put in place against unauthorized
+  access, clients are discouraged. And the moment the customer is discouraged, they are likely to
+  resort to other systems that can be accessed more easily and quickly. And as you know, in marketing, the client
+  does not care about what the issues of the supplier are. All they need is their needs met. Therefore, attempts at
+  convincing clients with reasons why e-resources have access restrictions
+  would not really make any meaningful impact.</p>
+</div>
+<button class="accordion">7.What are the inputs and outputs in an e library system?</button>
+<div class="panel">
+  <p>1) Book details (RFID / Barcode including info on title, author, publisher, rack #, rack column & row etc),
+2) Borrower details (student # etc)
+3) Date & time borrow
+4) Request info on a book borrowed too long by a previous borrower so that s/he can't renew next but have to return the book (so that other new borrower can borrow)
+Potential Output:
+1) Date & time borrower can renew the book online
+2) Date & time borrower needs to physically return the book for renewal / return
+3) Email (generated by the eLibrary System) to borrower to remind him / her on the book's due date for renewal / return
+4) Screen flagged on list of borrowers that haven't return the books after due date
+5) Penalty payment to collect from the overdue borrower
+6) History list of books a borrower had borrowed</p>
+</div>
+<button class="accordion">8.How can one specify the number of remote electronic resources in the annual report of the library?
+</button>
+<div class="panel">
+  <p>If the library budget pays for electronic resources, and they're made available from the
+  library/information services website or VLN, then they ARE part of the library collection.  
+  You need someone to administer them, monitor stats, and train students and colleagues in their effective use.
+  For information searching, you can't beat a professional librarian!
+</p>
+</div>
+<button class="accordion">9.Is it ever a good idea to use Open Source Integrated Library Systems?</button>
+<div class="panel">
+  <p>The Cost implications for both is almost the same. With open source you will steel need to employ of pay a
+  consultant for maintenance and customisation. If you have somebody inside already who is good in systems
+  and programing, going open source might be the good idea.
+</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

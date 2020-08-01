@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="widht=device-width,intial-scale1.0" />
+        <title>Gallery</title>
+       <!--  <link rel="stylesheet" href="style.css"/>-->
+    </head>
+    <body>
+        <div class="main">
+            <h1>GALLERY</h1>
+            <p>THE ART OF BODLEIAN</p>
+            <div class="gallery">
+                <div class="img" style="transition: transform .2s;">
+                    <img src="https://c1.wallpaperflare.com/preview/905/381/268/bodleian-library-duty-copy-library-university-oxford.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://live.staticflickr.com/3639/3367012521_19fd44b58c_b.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://c1.wallpaperflare.com/preview/797/537/227/oxford-radcliffe-camera-architecture-radcliffe.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://c0.wallpaperflare.com/preview/178/122/551/united-kingdom-oxford-bodleian-library-knowledge.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://c1.wallpaperflare.com/preview/1002/553/221/oxford-england-building-architecture.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://live.staticflickr.com/5180/5416627232_e37a907e71_b.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://p0.piqsels.com/preview/667/860/964/selby-selby-abbey-united-kingdom-8k-thumbnail.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://c1.wallpaperflare.com/preview/594/680/835/building-tourism-city-sky-thumbnail.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://live.staticflickr.com/4296/35803949781_7f4d43afd3_b.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://live.staticflickr.com/4296/35803949781_7f4d43afd3_b.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Radcliffe_Camera_Oxford_%287057966979%29.jpg/1024px-Radcliffe_Camera_Oxford_%287057966979%29.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://p0.pikrepo.com/preview/264/916/bodleian-library-duty-copy-library.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://c0.wallpaperflare.com/preview/401/419/649/boston-united-states-boston-public-library-urban.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://www.goodfreephotos.com/albums/england/oxford/quadrangle-of-university-college.jpg" />
+                </div>
+                <div class="img">
+                    <img src="https://c0.wallpaperflare.com/preview/236/402/419/oxford-united-kingdom-university-of-oxford-oxford-university-thumbnail.jpg" />
+                </div>
+             </div>
+        </div>
+<style>
+*{
+    margin:0;
+    padding:0;
+    font-family: algerian;
+}
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.main h1{
+    position: relative;
+    height: auto;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5% 0 2% 0;
+    text-align:center;
+    font-size: 2.4em;
+    font-weight: 650;
+    letter-spacing: 1px;
+    color: black;
+    border-left: 5px solid #017bf5;
+    border-right: 5px solid #017bf5;
+ 
+}
+.main p{
+    position: relative;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+.main .gallery{
+    position: relative;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vh;
+    grid-auto-flow: dense;
+}
+.main .gallery .img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 2px;
+}
+.main .gallery .img:first-child{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(2n+3){
+    grid-row-start: span 3;
+}
+main .gallery .img:nth-child(4n+5){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+main .gallery .img:nth-child(6n+7){
+    grid-row-start: span 1;
+}
+main .gallery .img:nth-child(8n+9){
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
+.main .gallery .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(1);
+    transition: 0.3s ease-in-out;
+}
+.main .gallery .img:hover img{
+    filter:brightness(1);
+}
+
+ @media only screen and (max-width: 768px){
+     .main h1{
+         font-size: 1.8em;
+         width: 400px;
+     }
+     .main p{
+        font-size: 1.2em;
+    }
+
+     .main .gallery{
+         display grid;
+         grid-template-columns:auto auto auto;
+     }
+ }
+ @media only screen and (max-width: 430px){
+    .main h1{
+        font-size: 1.2em;
+        width: 300px;
+    }
+    .main p{
+       font-size: 0.89em;
+   }
+
+    .main .gallery{
+        display: block;
+    }
+    .main .gallery .img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 2% 0;
+    }
+    .main .gallery .img .img{
+        display: block;
+        filter: brightness(1);
+    }
+}
+</style>
+    </body>
+</html>

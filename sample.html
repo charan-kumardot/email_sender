@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oxford library</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body style="background-color: #a6edde">
+   <div class="logo">
+        <img class="im"src="logo.png" width=169px height=125px; />
+        <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="https://media0.giphy.com/media/128MHrlrHNwwU0/100.webp?cid=ecf05e479k0z3xdfr7pbh36eh22n5jdq7h2cfmi59ks5ffso&rid=100.webp" style="width:205%" height="125px">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="d.png" style="width:205%" height="125px">
+                 </div>
+
+                <div class="mySlides fade">
+                  <img src="c.jpg" style="width:205%" height="125px">
+                </div>
+                <div class="sidebar">
+                              <a href="#faq"><i class="faq"></i>FAQ</a>
+                              <a href="#contact"><i class="contact"></i>CONTACT & LOCATION</a>
+                              <a href="#features"><i class="features"></i>FEATURES</a>
+
+                </div>
+                <div id="autoScroll" class="sidebarright">
+                       <h3 style="font-family: Algerian; font-size:29.3px;color:white;top:120px">Did you know?</h3>
+                       <img src="https://nationaltoday.com/wp-content/uploads/2020/06/danny-zjV8ptYgcEo-unsplash-scaled.jpg" width="210px"height="190px"> <br>
+                       <p  style="font-family:cursive;color:white">Not all libraries require silence. The Tikkurila Library in Vantaa, Finland, has a karaoke room with thousands of songs for guests to perform</p>
+
+                </div>
+
+        </div>
+
+                 <br>
+
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+   </div>
+   <div class="navbar">
+        <ul>
+            <li><a class="active" href="#">HOME</a></li>
+            <li><a href="#">DIVISIONS</a></li>
+            <li><a href="gallery.html">MEMBERSHIP</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </div>
+    <p class="a_container"style="position:fixed;color:#000d33 "><br>Oxford’s libraries are among the most famous in the world, not only for their exceptional collection of books and manuscripts, but also for their historic buildings, some of which have remained in continuous use since the Middle Ages.
+Today the Bodleian Libraries offers visitors a unique experience, combining the antiquity of the Old Library with the modern exhibition space of the Weston Library.<br>
+
+Expert guides bring to life the story of the Library on our behind the scenes tours.  30 Minute Tours include a visit to the Divinity School, a masterpiece of English Gothic architecture, and the medieval Duke Humfrey’s Library, both of which featured in the Harry Potter films.  60 Minute Tours include both of these sites, as well as the Convocation House, recently featured in the Oscar-winning film The Favourite, and Chancellor’s Court.  Extended 90 Minute Tours also visit the iconic Radcliffe Camera, one of Oxford’s most celebrated landmarks.<br>
+
+Self-guided audio tours visiting the Divinity School and Quadrangles are available in English, French, German, Spanish and Mandarin.  These provide a fascinating overview of the Library and University’s history and architecture.<br>
+
+The recently renovated purpose-built Weston Library offers two free-access rotating exhibitions featuring notable works from our collections.Self-guided audio tours visiting the Divinity School and Quadrangles are available in English, French, German, Spanish and Mandarin.  These provide a fascinating overview of the Library and University’s history and architecture.<br>
+
+The recently renovated purpose-built Weston Library offers two free-access rotating exhibitions featuring notable works from our collectionsSelf-guided audio tours visiting the Divinity School and Quadrangles are available in English, French, German, Spanish and Mandarin.  These provide a fascinating overview of the Library and University’s history and architecture.<br>
+
+The recently renovated purpose-built Weston Library offers two free-access rotating exhibitions featuring notable works from our collections<br>
+    <script type="text/javascript">
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides()
+             {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) 
+                  {
+                     slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                 if (slideIndex > slides.length) {slideIndex = 1}    
+                 for (i = 0; i < dots.length; i++)
+                 {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                 }
+                 slides[slideIndex-1].style.display = "block";  
+                 dots[slideIndex-1].className += " active";
+                 setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+           
+       
+    </script>
+
+</body>
+</html>
